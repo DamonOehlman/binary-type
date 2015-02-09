@@ -29,6 +29,5 @@
     "travis-multirunner": "^1.0.0"
   },
   "dependencies": {
-    "curry": "^1.2.0"
   }
 }
