@@ -7,7 +7,7 @@ a buffer.
 
 [![NPM](https://nodei.co/npm/binary-type.png)](https://nodei.co/npm/binary-type/)
 
-
+[![Build Status](https://img.shields.io/travis/DamonOehlman/binary-type.svg?branch=master)](https://travis-ci.org/DamonOehlman/binary-type) 
 
 ## Reference
 
