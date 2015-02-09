@@ -1,6 +1,6 @@
 {
   "name": "binary-type",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Using file signatures attempt to determine the mime-type of a buffer",
   "main": "index.js",
   "scripts": {
@@ -28,6 +28,5 @@
     "testling": "^1.7.1",
     "travis-multirunner": "^1.0.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
