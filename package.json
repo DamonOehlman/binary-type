@@ -1,0 +1,23 @@
+{
+  "name": "binary-type",
+  "version": "1.0.0",
+  "description": "Using file signatures attempt to determine the mime-type of a buffer",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/all.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DamonOehlman/binary-type.git"
+  },
+  "keywords": [
+    "binary",
+    "file-type-detection"
+  ],
+  "author": "Damon Oehlman <damon.oehlman@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DamonOehlman/binary-type/issues"
+  },
+  "homepage": "https://github.com/DamonOehlman/binary-type"
+}
