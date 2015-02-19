@@ -16,3 +16,8 @@ test('pdf test file matches application/pdf', function(t) {
   t.plan(1);
   t.ok(binaryType.matches('application/pdf', testFiles.pdf), 'recognised application/pdf');
 });
+
+test('ogg test file matches audio/ogg', function(t) {
+  t.plan(1);
+  t.ok(binaryType.matches('audio/ogg', testFiles.ogg), 'recognised audio/ogg');
+});

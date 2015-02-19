@@ -16,3 +16,8 @@ test('pdf test file guessed as application/pdf', function(t) {
   t.plan(1);
   t.equal(binaryType.guess(testFiles.pdf), 'application/pdf', 'ok');
 });
+
+test('ogg test file guessed as audio/ogg', function(t) {
+  t.plan(1);
+  t.equal(binaryType.guess(testFiles.ogg), 'audio/ogg', 'ok');
+});
