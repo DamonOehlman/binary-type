@@ -7,6 +7,11 @@ test('jpeg test file matches image/jpeg', function(t) {
   t.ok(binaryType.matches('image/jpeg', testFiles.jpeg), 'recognised image/jpeg');
 });
 
+test('jpeg #2 test file matches image/jpeg', function(t) {
+  t.plan(1);
+  t.ok(binaryType.matches('image/jpeg', testFiles.jpeg2), 'recognised image/jpeg');
+});
+
 test('png test file matches image/png', function(t) {
   t.plan(1);
   t.ok(binaryType.matches('image/png', testFiles.png), 'recognised image/png');
