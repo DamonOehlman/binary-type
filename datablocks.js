@@ -8,7 +8,7 @@ module.exports = {
   },
 
   image: {
-    jpeg: [ 'FF D8 FF E0 xx xx 4A 46 49 46 00', 'FF D9' ],
+    jpeg: ['FF D8 FF', 'FF D9' ],
     png: [ '89 50 4E 47 0D 0A 1A 0A', '49 45 4E 44 AE 42 60 82' ]
   },
 
