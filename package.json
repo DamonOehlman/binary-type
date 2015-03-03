@@ -29,5 +29,7 @@
     "testling": "^1.7.1",
     "travis-multirunner": "^1.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "typedarray-to-buffer": "^3.0.1"
+  }
 }
