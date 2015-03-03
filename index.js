@@ -1,5 +1,6 @@
 var matchers = require('./matchers');
 var knownTypes = Object.keys(matchers);
+var toBuffer = require('typedarray-to-buffer');
 
 /**
   # binary-type
@@ -20,7 +21,14 @@ var knownTypes = Object.keys(matchers);
 **/
 function matches(mimetype, buffer) {
   var checks = matchers[mimetype];
-  var passedChecks = checks && checks.filter(function(check) {
+  var passedChecks;
+
+  // ensure the buffer is a buffer
+  if (! Buffer.isBuffer(buffer)) {
+    buffer = toBuffer(buffer);
+  }
+
+  passedChecks = checks && checks.filter(function(check) {
     return check(buffer);
   });
 
