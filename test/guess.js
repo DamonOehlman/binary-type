@@ -2,6 +2,11 @@ var testFiles = require('./helpers/testfiles');
 var test = require('tape');
 var binaryType = require('../');
 
+test('bmp test file guessed as image/bmp', function(t) {
+  t.plan(1);
+  t.equal(binaryType.guess(testFiles.bmp), 'image/bmp', 'ok');
+});
+
 test('jpeg test file guessed as image/jpeg', function(t) {
   t.plan(1);
   t.equal(binaryType.guess(testFiles.jpeg), 'image/jpeg', 'ok');
