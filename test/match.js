@@ -2,6 +2,11 @@ var testFiles = require('./helpers/testfiles');
 var test = require('tape');
 var binaryType = require('../');
 
+test('bmp test file matches image/bmp', function(t) {
+  t.plan(1);
+  t.ok(binaryType.matches('image/bmp', testFiles.bmp), 'recognised image/bmp');
+});
+
 test('jpeg test file matches image/jpeg', function(t) {
   t.plan(1);
   t.ok(binaryType.matches('image/jpeg', testFiles.jpeg), 'recognised image/jpeg');

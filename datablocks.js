@@ -8,6 +8,7 @@ module.exports = {
   },
 
   image: {
+    bmp: [ '42 4D' ],
     jpeg: ['FF D8 FF', 'FF D9' ],
     png: [ '89 50 4E 47 0D 0A 1A 0A', '49 45 4E 44 AE 42 60 82' ]
   },
