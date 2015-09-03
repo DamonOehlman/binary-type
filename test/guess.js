@@ -7,6 +7,11 @@ test('bmp test file guessed as image/bmp', function(t) {
   t.equal(binaryType.guess(testFiles.bmp), 'image/bmp', 'ok');
 });
 
+test('gif89a test file guessed as image/gif', function(t) {
+  t.plan(1);
+  t.equal(binaryType.guess(testFiles.gif), 'image/gif', 'ok');
+});
+
 test('jpeg test file guessed as image/jpeg', function(t) {
   t.plan(1);
   t.equal(binaryType.guess(testFiles.jpeg), 'image/jpeg', 'ok');
