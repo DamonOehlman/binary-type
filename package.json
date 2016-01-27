@@ -4,7 +4,7 @@
   "description": "Using file signatures attempt to determine the mime-type of a buffer",
   "main": "index.js",
   "scripts": {
-    "test": "node test/all.js && browserify test/all.js -t brfs | testling -x ./node_modules/travis-multirunner/start-$BROWSER.sh",
+    "test": "node test/all.js && browserify test/all.js -t brfs | testling -x ./node_modules/travis-multirunner/start.sh",
     "gendocs": "gendocs > README.md",
     "viewfile": "cat test/helpers/$FILENAME | od -tx1 | less"
   },
@@ -27,7 +27,7 @@
     "browserify": "^10.2.4",
     "tape": "^4.0.0",
     "testling": "^1.7.1",
-    "travis-multirunner": "^2.5.0"
+    "travis-multirunner": "^3.0.0"
   },
   "dependencies": {
     "typedarray-to-buffer": "^3.0.1"
